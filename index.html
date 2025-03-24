@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PBCOE- E-Magzine : Exposition</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+</head>
+<body>
+    <!-- --------------------- top ---------------------------- -->
+    <div class="head-section">
+        <div class="head-first">
+            <img src="img/pbcoe-logo.png" alt="pbcoe-logo">
+            <h1><b><u>IT DEPARTMENT</u></b></h1>
+        </div>
+        <div class="head-second">
+            <h2><u>E-Magzine : Exposition</u></h2>
+        </div>
+    </div>
+
+
+    <!-- --------------------- slider ------------------------ -->
+    <div class="header-slider">
+        <p class="control_prev"><span><</span></p>
+        <p class="control_next"><span>></span></p>
+        <ul>
+            <img src="img/pic-1.jpg" class="header-img" alt="">
+            <img src="img/pic-2.jpg" class="header-img" alt="">
+            <img src="img/pic-3.jpg" class="header-img" alt="">
+            <img src="img/pic-4.jpg" class="header-img" alt="">
+            <img src="img/pic-5.jpg" class="header-img" alt="">
+            <img src="img/pic-6.jpg" class="header-img" alt="">
+            <img src="img/pic-7.jpg" class="header-img" alt="">
+            <img src="img/pic-8.jpg" class="header-img" alt="">
+            <img src="img/pic-9.jpg" class="header-img" alt="">
+            <img src="img/pic-91.jpg" class="header-img" alt="">
+            <img src="img/pic-92.jpg" class="header-img" alt="">
+            </ul>
+    </div>
+    <script>
+        const imgs = document.querySelectorAll('.header-slider ul img');
+        const prev_btn = document.querySelector('.control_prev');
+        const next_btn = document.querySelector('.control_next');
+
+        let n = 0;
+
+        function changeSlide(){
+            for (let i = 0; i < imgs.length; i++){
+                imgs[i].style.display = 'none';
+            }
+            imgs[n].style.display = 'block';
+        }
+        changeSlide();
+
+        prev_btn.addEventListener('click',(e)=>{
+            if(n>0){
+                n--;
+            }
+            else{
+                n = imgs.length - 1;
+            }
+            changeSlide();
+        })
+        next_btn.addEventListener('click',(e)=>{
+            if(n < imgs.length - 1){
+                n++;
+            }
+            else{
+                n = 0;
+            }
+            changeSlide();
+        })
+    </script>
+</body>
+</html>
