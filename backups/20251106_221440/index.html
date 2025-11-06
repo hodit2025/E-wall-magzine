@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PBCOE- E-Magzine : Exposition</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+</head>
+<body>
+    <!-- --------------------- top ---------------------------- -->
+    <div class="head-section">
+        <div class="head-first">
+            <img src="img/pbcoe-logo.png" alt="pbcoe-logo">
+            <h1><b><u>Information Technology Department</u></b></h1>
+        </div>
+        <div class="head-second">
+            <h2><u>E-Magzine : Exposition</u></h2>
+        </div>
+    </div>
+
+
+    <!-- --------------------- slider ------------------------ -->
+    <div class="header-slider">
+        <p class="control_prev"><span><</span></p>
+        <p class="control_next"><span>></span></p>
+        <ul>
+            <img src="img/pic-1.jpg" class="header-img" alt="">
+            <img src="img/pic-2.jpg" class="header-img" alt="">
+            <img src="img/pic-3.jpg" class="header-img" alt="">
+            <img src="img/pic-4.jpg" class="header-img" alt="">
+            <img src="img/pic-5.jpg" class="header-img" alt="">
+            <img src="img/pic-6.jpg" class="header-img" alt="">
+            <img src="img/pic-7.jpg" class="header-img" alt="">
+            <img src="img/pic-8.jpg" class="header-img" alt="">
+            <img src="img/pic-9.jpg" class="header-img" alt="">
+            <img src="img/pic-91.jpg" class="header-img" alt="">
+            <img src="img/pic-92.jpg" class="header-img" alt="">
+            </ul>
+    </div>
+    <script>
+        const imgs = document.querySelectorAll('.header-slider ul img');
+        const prev_btn = document.querySelector('.control_prev');
+        const next_btn = document.querySelector('.control_next');
+
+        let n = 0;
+
+        function changeSlide(){
+            for (let i = 0; i < imgs.length; i++){
+                imgs[i].style.display = 'none';
+            }
+            imgs[n].style.display = 'block';
+        }
+        changeSlide();
+
+        prev_btn.addEventListener('click',(e)=>{
+            if(n>0){
+                n--;
+            }
+            else{
+                n = imgs.length - 1;
+            }
+            changeSlide();
+        })
+        next_btn.addEventListener('click',(e)=>{
+            if(n < imgs.length - 1){
+                n++;
+            }
+            else{
+                n = 0;
+            }
+            changeSlide();
+        })
+    </script>
+    
+    <!-- --------------------- content ------------------------ -->
+    <main class="content">
+        <section id="institute">
+            <h2>Institute Vision</h2>
+            <p>
+                To be a leading institution ensuring Academic Excellence, Nurturing Research, Innovation and Entrepreneurial Attitude to produce employable technocrats for service to society.
+            </p>
+
+            <h3>Institute Mission</h3>
+            <ol>
+                <li>To be a student centric institute imbibing experiential, innovative and lifelong learning skills, addressing societal problems.</li>
+                <li>To create a conducive ecosystem for research, innovation &amp; extension services.</li>
+                <li>To inculcate entrepreneurial attitude and values amongst Learners.</li>
+                <li>To collaborate with industries and other institutions to strengthen symbiotic relations.</li>
+                <li>To inculcate high ethical and moral values among the students.</li>
+            </ol>
+        </section>
+
+        <section id="department">
+            <h2>Department of Information Technology</h2>
+
+            <h3>Department Vision</h3>
+            <p>
+                To be a premier center for IT education, developing globally competent professionals capable of driving innovation and contributing to the computing field with service to society.
+            </p>
+
+            <h3>Department Mission</h3>
+            <ol>
+                <li>M1. To provide comprehensive knowledge and practical skills in cutting-edge software technologies crucial for professional success.</li>
+                <li>M2. To be a learning centre using student-centric, experiential and innovative methods.</li>
+                <li>M3. To develop ethical and lifelong learners for contribution to the progress of society.</li>
+                <li>M4. Fostering industry-academia collaboration and promoting entrepreneurial attitude.</li>
+            </ol>
+
+            <h3>Program Educational Objectives (PEOs)</h3>
+            <ol>
+                <li>PEO1: To produce technically efficient manpower to cater the needs of IT Industry with sound fundamental and computing knowledge.</li>
+                <li>PEO2: To develop graduates who have the ability to design, develop and deploy IT solutions using emerging technologies.</li>
+                <li>PEO3: To use the acquired knowledge to help society and environment sensitively with professional ethics.</li>
+            </ol>
+
+            <h3>Program Specific Outcomes (PSOs)</h3>
+            <ol>
+                <li>PSO1: Demonstrate logic development ability along with mathematical concepts to solve real world problems.</li>
+                <li>PSO2: Ability to design and develop computerized systems by applying conventional and modern tools relevant to the IT industry.</li>
+                <li>PSO3: An ability to apply professional skills, ethical and lifelong learning values to help society.</li>
+            </ol>
+
+            <h3>Program Outcomes (POs)</h3>
+            <ol>
+                <li><strong>Engineering knowledge:</strong> Apply the knowledge of mathematics, science, engineering fundamentals, and an engineering specialization to the solution of complex engineering problems.</li>
+                <li><strong>Problem analysis:</strong> Identify, formulate, review research literature, and analyze complex engineering problems reaching substantiated conclusions using first principles of mathematics, natural sciences, and engineering sciences.</li>
+                <li><strong>Design/development of solutions:</strong> Design solutions for complex engineering problems and design system components or processes that meet the specified needs with appropriate consideration for the public health and safety, and the cultural, societal, and environmental considerations.</li>
+                <li><strong>Conduct investigations of complex problems:</strong> Use research-based knowledge and research methods including design of experiments, analysis and interpretation of data, and synthesis of the information to provide valid conclusions.</li>
+                <li><strong>Modern tool usage:</strong> Create, select, and apply appropriate techniques, resources, and modern engineering and IT tools including prediction and modeling to complex engineering activities with an understanding of the limitations.</li>
+                <li><strong>The engineer and society:</strong> Apply reasoning informed by the contextual knowledge to assess societal, health, safety, legal and cultural issues and the consequent responsibilities relevant to the professional engineering practice.</li>
+                <li><strong>Environment and sustainability:</strong> Understand the impact of the professional engineering solutions in societal and environmental contexts, and demonstrate the knowledge of, and need for sustainable development.</li>
+                <li><strong>Ethics:</strong> Apply ethical principles and commit to professional ethics and responsibilities and norms of the engineering practice.</li>
+                <li><strong>Individual and team work:</strong> Function effectively as an individual, and as a member or leader in diverse teams, and in multidisciplinary settings.</li>
+                <li><strong>Communication:</strong> Communicate effectively on complex engineering activities with the engineering community and with society at large, such as, being able to comprehend and write effective reports and design documentation, make effective presentations, and give and receive clear instructions.</li>
+                <li><strong>Project management and finance:</strong> Demonstrate knowledge and understanding of the engineering and management principles and apply these to one’s own work, as a member and leader in a team, to manage projects and in multidisciplinary environments.</li>
+                <li><strong>Life-long learning:</strong> Recognize the need for, and have the preparation and ability to engage in independent and life-long learning in the broadest context of technological change.</li>
+            </ol>
+        </section>
+    </main>
+
+</body>
+</html>

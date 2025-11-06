@@ -3,75 +3,433 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PBCOE- E-Magzine : Exposition</title>
+    <title>PBCOE - E-Magazine : Exposition | Information Technology Department</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- --------------------- top ---------------------------- -->
-    <div class="head-section">
-        <div class="head-first">
-            <img src="img/pbcoe-logo.png" alt="pbcoe-logo">
-            <h1><b><u>Information Technology Department</u></b></h1>
-        </div>
-        <div class="head-second">
-            <h2><u>E-Magzine : Exposition</u></h2>
-        </div>
-    </div>
-
-
-    <!-- --------------------- slider ------------------------ -->
-    <div class="header-slider">
-        <p class="control_prev"><span><</span></p>
-        <p class="control_next"><span>></span></p>
-        <ul>
-            <img src="img/pic-1.jpg" class="header-img" alt="">
-            <img src="img/pic-2.jpg" class="header-img" alt="">
-            <img src="img/pic-3.jpg" class="header-img" alt="">
-            <img src="img/pic-4.jpg" class="header-img" alt="">
-            <img src="img/pic-5.jpg" class="header-img" alt="">
-            <img src="img/pic-6.jpg" class="header-img" alt="">
-            <img src="img/pic-7.jpg" class="header-img" alt="">
-            <img src="img/pic-8.jpg" class="header-img" alt="">
-            <img src="img/pic-9.jpg" class="header-img" alt="">
-            <img src="img/pic-91.jpg" class="header-img" alt="">
-            <img src="img/pic-92.jpg" class="header-img" alt="">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <img src="img/pbcoe-logo.png" alt="PBCOE Logo" class="nav-logo">
+                <span class="nav-title">PBCOE - IT Department</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#institute" class="nav-link">Institute</a></li>
+                <li><a href="#department" class="nav-link">Department</a></li>
+                <li><a href="#programs" class="nav-link">Programs</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
             </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero / Slider Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Information Technology Department</h1>
+                <p class="hero-subtitle">E-Magazine : Exposition</p>
+                <p class="hero-description">Showcasing department activities, outcomes and academic vision.</p>
+                <div class="hero-buttons">
+                    <a href="#institute" class="btn btn-primary">Institute Vision</a>
+                    <a href="#department" class="btn btn-secondary">Department Details</a>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <div class="slider-container" id="hero-slider">
+                    <button class="slider-prev" aria-label="Previous slide">‹</button>
+                    <button class="slider-next" aria-label="Next slide">›</button>
+                    <img src="img/pic-1.jpg" class="slide" alt="slide 1">
+                    <img src="img/pic-2.jpg" class="slide" alt="slide 2">
+                    <img src="img/pic-3.jpg" class="slide" alt="slide 3">
+                    <img src="img/pic-4.jpg" class="slide" alt="slide 4">
+                    <img src="img/pic-5.jpg" class="slide" alt="slide 5">
+                    <img src="img/pic-6.jpg" class="slide" alt="slide 6">
+                    <img src="img/pic-7.jpg" class="slide" alt="slide 7">
+                    <img src="img/pic-8.jpg" class="slide" alt="slide 8">
+                    <img src="img/pic-9.jpg" class="slide" alt="slide 9">
+                    <img src="img/pic-91.jpg" class="slide" alt="slide 10">
+                    <img src="img/pic-92.jpg" class="slide" alt="slide 11">
+                </div>
+                <div class="slider-dots" id="slider-dots" aria-hidden="false"></div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Institute Section -->
+    <section id="institute" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Institute Vision & Mission</h2>
+                <p class="section-subtitle">Building excellence in technical education and research</p>
+            </div>
+            
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3 class="card-title">Institute Vision</h3>
+                    <div class="card-content">
+                        <p>To be a leading institution ensuring Academic Excellence, Nurturing Research, Innovation and Entrepreneurial Attitude to produce employable technocrats for service to society.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3 class="card-title">Institute Mission</h3>
+                    <div class="card-content">
+                        <ul class="mission-list">
+                            <li>To be a student centric institute imbibing experiential, innovative and lifelong learning skills, addressing societal problems.</li>
+                            <li>To create a conducive ecosystem for research, innovation & extension services.</li>
+                            <li>To inculcate entrepreneurial attitude and values amongst Learners.</li>
+                            <li>To collaborate with industries and other institutions to strengthen symbiotic relations.</li>
+                            <li>To inculcate high ethical and moral values among the students.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Department Section -->
+    <section id="department" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Department of Information Technology</h2>
+                <p class="section-subtitle">Developing globally competent IT professionals</p>
+            </div>
+            
+            <div class="department-grid">
+                <div class="dept-card">
+                    <div class="dept-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Department Vision</h3>
+                    <p>To be a premier center for IT education, developing globally competent professionals capable of driving innovation and contributing to the computing field with service to society.</p>
+                </div>
+                
+                <div class="dept-card">
+                    <div class="dept-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Department Mission</h3>
+                    <div class="mission-items">
+                        <div class="mission-item">
+                            <span class="mission-label">M1</span>
+                            <p>To provide comprehensive knowledge and practical skills in cutting-edge software technologies crucial for professional success.</p>
+                        </div>
+                        <div class="mission-item">
+                            <span class="mission-label">M2</span>
+                            <p>To be a learning centre using student-centric, experiential and innovative methods.</p>
+                        </div>
+                        <div class="mission-item">
+                            <span class="mission-label">M3</span>
+                            <p>To develop ethical and lifelong learners for contribution to the progress of society.</p>
+                        </div>
+                        <div class="mission-item">
+                            <span class="mission-label">M4</span>
+                            <p>Fostering industry-academia collaboration and promoting entrepreneurial attitude.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section id="programs" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Academic Programs</h2>
+                <p class="section-subtitle">Comprehensive curriculum and learning outcomes</p>
+            </div>
+            
+            <div class="programs-section">
+                <div class="program-tabs">
+                    <button class="tab-btn active" onclick="showTab('peos')">
+                        <i class="fas fa-target"></i> PEOs
+                    </button>
+                    <button class="tab-btn" onclick="showTab('psos')">
+                        <i class="fas fa-graduation-cap"></i> PSOs
+                    </button>
+                    <button class="tab-btn" onclick="showTab('pos')">
+                        <i class="fas fa-cogs"></i> Program Outcomes
+                    </button>
+                </div>
+                
+                <div class="tab-content">
+                    <div id="peos" class="tab-pane active">
+                        <h3>Program Educational Objectives (PEOs)</h3>
+                        <div class="outcomes-grid">
+                            <div class="outcome-card">
+                                <div class="outcome-number">1</div>
+                                <h4>Technical Excellence</h4>
+                                <p>To produce technically efficient manpower to cater the needs of IT Industry with sound fundamental and computing knowledge.</p>
+                            </div>
+                            <div class="outcome-card">
+                                <div class="outcome-number">2</div>
+                                <h4>Innovation & Development</h4>
+                                <p>To develop graduates who have the ability to design, develop and deploy IT solutions using emerging technologies.</p>
+                            </div>
+                            <div class="outcome-card">
+                                <div class="outcome-number">3</div>
+                                <h4>Ethical Practice</h4>
+                                <p>To use the acquired knowledge to help society and environment sensitively with professional ethics.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="psos" class="tab-pane">
+                        <h3>Program Specific Outcomes (PSOs)</h3>
+                        <div class="outcomes-grid">
+                            <div class="outcome-card">
+                                <div class="outcome-number">1</div>
+                                <h4>Problem Solving</h4>
+                                <p>Demonstrate logic development ability along with mathematical concepts to solve real world problems.</p>
+                            </div>
+                            <div class="outcome-card">
+                                <div class="outcome-number">2</div>
+                                <h4>System Design</h4>
+                                <p>Ability to design and develop computerized systems by applying conventional and modern tools relevant to the IT industry.</p>
+                            </div>
+                            <div class="outcome-card">
+                                <div class="outcome-number">3</div>
+                                <h4>Professional Skills</h4>
+                                <p>An ability to apply professional skills, ethical and lifelong learning values to help society.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="pos" class="tab-pane">
+                        <h3>Program Outcomes (POs)</h3>
+                        <div class="po-grid">
+                            <div class="po-item">
+                                <div class="po-icon">1</div>
+                                <div>
+                                    <h4>Engineering Knowledge</h4>
+                                    <p>Apply the knowledge of mathematics, science, engineering fundamentals, and an engineering specialization to the solution of complex engineering problems.</p>
+                                </div>
+                            </div>
+                            <div class="po-item">
+                                <div class="po-icon">2</div>
+                                <div>
+                                    <h4>Problem Analysis</h4>
+                                    <p>Identify, formulate, review research literature, and analyze complex engineering problems reaching substantiated conclusions using first principles of mathematics, natural sciences, and engineering sciences.</p>
+                                </div>
+                            </div>
+                            <div class="po-item">
+                                <div class="po-icon">3</div>
+                                <div>
+                                    <h4>Design/Development of Solutions</h4>
+                                    <p>Design solutions for complex engineering problems and design system components or processes that meet the specified needs with appropriate consideration for the public health and safety, and the cultural, societal, and environmental considerations.</p>
+                                </div>
+                            </div>
+                            <div class="po-item">
+                                <div class="po-icon">4</div>
+                                <div>
+                                    <h4>Conduct Investigations</h4>
+                                    <p>Use research-based knowledge and research methods including design of experiments, analysis and interpretation of data, and synthesis of the information to provide valid conclusions.</p>
+                                </div>
+                            </div>
+                            <div class="po-item">
+                                <div class="po-icon">5</div>
+                                <div>
+                                    <h4>Modern Tool Usage</h4>
+                                    <p>Create, select, and apply appropriate techniques, resources, and modern engineering and IT tools including prediction and modeling to complex engineering activities with an understanding of the limitations.</p>
+                                </div>
+                            </div>
+                            <div class="po-item">
+                                <div class="po-icon">6</div>
+                                <div>
+                                    <h4>The Engineer and Society</h4>
+                                    <p>Apply reasoning informed by the contextual knowledge to assess societal, health, safety, legal and cultural issues and the consequent responsibilities relevant to the professional engineering practice.</p>
+                                </div>
+                            </div>
+                            <div class="po-item">
+                                <div class="po-icon">7</div>
+                                <div>
+                                    <h4>Environment and Sustainability</h4>
+                                    <p>Understand the impact of the professional engineering solutions in societal and environmental contexts, and demonstrate the knowledge of, and need for sustainable development.</p>
+                                </div>
+                            </div>
+                            <div class="po-item">
+                                <div class="po-icon">8</div>
+                                <div>
+                                    <h4>Ethics</h4>
+                                    <p>Apply ethical principles and commit to professional ethics and responsibilities and norms of the engineering practice.</p>
+                                </div>
+                            </div>
+                            <div class="po-item">
+                                <div class="po-icon">9</div>
+                                <div>
+                                    <h4>Individual and Team Work</h4>
+                                    <p>Function effectively as an individual, and as a member or leader in diverse teams, and in multidisciplinary settings.</p>
+                                </div>
+                            </div>
+                            <div class="po-item">
+                                <div class="po-icon">10</div>
+                                <div>
+                                    <h4>Communication</h4>
+                                    <p>Communicate effectively on complex engineering activities with the engineering community and with society at large, such as, being able to comprehend and write effective reports and design documentation, make effective presentations, and give and receive clear instructions.</p>
+                                </div>
+                            </div>
+                            <div class="po-item">
+                                <div class="po-icon">11</div>
+                                <div>
+                                    <h4>Project Management and Finance</h4>
+                                    <p>Demonstrate knowledge and understanding of the engineering and management principles and apply these to one's own work, as a member and leader in a team, to manage projects and in multidisciplinary environments.</p>
+                                </div>
+                            </div>
+                            <div class="po-item">
+                                <div class="po-icon">12</div>
+                                <div>
+                                    <h4>Life-long Learning</h4>
+                                    <p>Recognize the need for, and have the preparation and ability to engage in independent and life-long learning in the broadest context of technological change.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Department Gallery</h2>
+                <p class="section-subtitle">Showcasing our activities and achievements</p>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item" data-lightbox="gallery">
+                    <img src="img/pic-1.jpg" alt="Department Activity 1" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-lightbox="gallery">
+                    <img src="img/pic-2.jpg" alt="Department Activity 2" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-lightbox="gallery">
+                    <img src="img/pic-3.jpg" alt="Department Activity 3" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-lightbox="gallery">
+                    <img src="img/pic-4.jpg" alt="Department Activity 4" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-lightbox="gallery">
+                    <img src="img/pic-5.jpg" alt="Department Activity 5" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-lightbox="gallery">
+                    <img src="img/pic-6.jpg" alt="Department Activity 6" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-lightbox="gallery">
+                    <img src="img/pic-7.jpg" alt="Department Activity 7" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-lightbox="gallery">
+                    <img src="img/pic-8.jpg" alt="Department Activity 8" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-lightbox="gallery">
+                    <img src="img/pic-9.jpg" alt="Department Activity 9" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-lightbox="gallery">
+                    <img src="img/pic-91.jpg" alt="Department Activity 10" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-lightbox="gallery">
+                    <img src="img/pic-92.jpg" alt="Department Activity 11" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="img/pbcoe-logo.png" alt="PBCOE Logo" class="footer-logo">
+                    <h4>Information Technology Department</h4>
+                    <p>Priyadarshini Bhagwati College of Engineering</p>
+                    <p>HARPUR NAGAR, UMRED ROAD, NAGPUR - 440024</p>
+                    <p>Excellence in Technical Education</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <a href="#institute">Institute</a>
+                    <a href="#department">Department</a>
+                    <a href="#programs">Programs</a>
+                    <a href="#gallery">Gallery</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>Department of Information Technology</p>
+                    <p>Priyadarshini Bhagwati College of Engineering</p>
+                    <p>HARPUR NAGAR, UMRED ROAD, NAGPUR - 440024</p>
+                    <p>Email: hoditpbcoe@gmail.com</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 PBCOE Information Technology Department. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-content">
+            <span class="lightbox-close">&times;</span>
+            <button class="lightbox-prev">&#10094;</button>
+            <button class="lightbox-next">&#10095;</button>
+            <img id="lightbox-img" src="" alt="">
+            <div class="lightbox-caption"></div>
+        </div>
     </div>
-    <script>
-        const imgs = document.querySelectorAll('.header-slider ul img');
-        const prev_btn = document.querySelector('.control_prev');
-        const next_btn = document.querySelector('.control_next');
 
-        let n = 0;
-
-        function changeSlide(){
-            for (let i = 0; i < imgs.length; i++){
-                imgs[i].style.display = 'none';
-            }
-            imgs[n].style.display = 'block';
-        }
-        changeSlide();
-
-        prev_btn.addEventListener('click',(e)=>{
-            if(n>0){
-                n--;
-            }
-            else{
-                n = imgs.length - 1;
-            }
-            changeSlide();
-        })
-        next_btn.addEventListener('click',(e)=>{
-            if(n < imgs.length - 1){
-                n++;
-            }
-            else{
-                n = 0;
-            }
-            changeSlide();
-        })
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
